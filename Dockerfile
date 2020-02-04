@@ -1,4 +1,4 @@
-FROM node:10.13-alpine as node-angular
+FROM node:12.14-alpine as node-angular
 LABEL authors="Daniel Díaz"
 
 #Linux setup
