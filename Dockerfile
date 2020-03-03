@@ -3,7 +3,7 @@ LABEL authors="Daniel Díaz"
 
 #Linux setup
 RUN apk update \
-  && apk add --update alpine-sdk \
+  && apk add --update alpine-sdk python \
   && apk del alpine-sdk \
   && rm -rf /tmp/* /var/cache/apk/* *.tar.gz ~/.npm \
   # && npm cache verify \
@@ -11,5 +11,3 @@ RUN apk update \
 
 RUN npm set progress=false
 RUN npm install -g npm@latest
-RUN npm install -g rimraf
-RUN npm install -g @angular/cli@latest
