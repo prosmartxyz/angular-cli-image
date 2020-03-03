@@ -9,5 +9,5 @@ RUN apk update \
   # && npm cache verify \
   && sed -i -e "s/bin\/ash/bin\/sh/" /etc/passwd
 
-RUN npm set progress=false
 RUN npm install -g npm@latest
+RUN npm set progress=false
