@@ -3,7 +3,7 @@ LABEL authors="Daniel Díaz"
 
 #Linux setup
 RUN apk update \
-  && apk add --update alpine-sdk python \
+  && apk add --update alpine-sdk make g++ python \
   && apk del alpine-sdk \
   && rm -rf /tmp/* /var/cache/apk/* *.tar.gz ~/.npm \
   # && npm cache verify \
