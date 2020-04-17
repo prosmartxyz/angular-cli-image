@@ -1,5 +1,5 @@
-FROM node:12.14-alpine as node-angular
-LABEL authors="Daniel Díaz"
+FROM node:13-alpine as node-angular
+LABEL authors="Prosmart - Daniel Diaz"
 
 #Linux setup
 RUN apk update \
