@@ -3,7 +3,7 @@ LABEL authors="Prosmart - Daniel Diaz"
 
 #Linux setup
 RUN apk update \
-  && apk add --update alpine-sdk make g++ python \
+  && apk add --update alpine-sdk make g++ python git \
   && apk del alpine-sdk \
   && rm -rf /tmp/* /var/cache/apk/* *.tar.gz ~/.npm \
   # && npm cache verify \

@@ -5,7 +5,8 @@ Pre Installed in this image:
 - alpine-sdk
 - make
 - g++
-- python
+- Python
+- Git
 
 We use it to build **Angular CLI** projects because of f%$·&% Node Gyp and other SASS dependencies. You can use it as you wish, we try to keep latest Node version, be aware of that. See DOCKERFILE for more information.
 
