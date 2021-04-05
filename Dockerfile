@@ -1,5 +1,7 @@
 FROM node:13-alpine as node-angular
-LABEL authors="Prosmart - Daniel Diaz"
+LABEL authors="Prosmart - Daniel Diaz Astudillo"
+
+#prosmartxyz/angular-cli:tagname
 
 #Linux setup
 RUN apk update \
